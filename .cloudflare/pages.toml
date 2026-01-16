@@ -1,0 +1,3 @@
+[build]
+command = "echo 'Hello from Nikko DataHub!' > index.html"
+output_directory = "."
