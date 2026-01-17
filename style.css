@@ -319,38 +319,6 @@ body.videos-page {
         max-width: 90%;
     }
 }
-/* ─────────────────────────────────────────────
-   VIDEOS PAGE STYLES – Nikko DataHub
-────────────────────────────────────────────── */
-/* Navigation Bar */
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1e1442; /* distinct from white text */
-  padding: 1rem 2rem;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-.nav-right ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-right a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 /* Video Cards Centered */
 .video-cards {
