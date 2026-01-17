@@ -6,19 +6,29 @@ body {
 }
 
 /* Navigation bar */
-nav {
+.navbar {
   background: #111;
   padding: 15px;
 }
 
-nav a {
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
   color: white;
   text-decoration: none;
-  margin-right: 25px;
+  font-weight: normal;
+}
+
+.home-link {
   font-weight: bold;
 }
 
-nav a:hover {
+.nav-link:hover {
   opacity: 0.7;
 }
 
