@@ -122,7 +122,9 @@ body.videos-page {
   transform: scale(1.2);
   filter: brightness(1.4);
 }
-
+.icon {
+  filter: brightness(10);
+}
 .icon.fb { background-image: url('/assets/icons/facebook.svg'); }
 .icon.x  { background-image: url('/assets/icons/x.svg'); }
 .icon.ig { background-image: url('/assets/icons/instagram.svg'); }
