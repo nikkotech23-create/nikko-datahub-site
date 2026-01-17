@@ -2,56 +2,23 @@
    VIDEOS PAGE – Nikko DataHub
 ────────────────────────────────────────────── */
 
-/* Page background */
-.videos-page {
+body.videos-page {
   background: linear-gradient(to bottom right, #1a1440, #0f0a28);
   color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* NAVIGATION */
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0d0825;
-  padding: 1rem 2rem;
-}
-
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-.nav-right ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.nav-right a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* INTRO SECTION */
 .main-content {
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
-.intro h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.subheading {
-  font-size: 1.3rem;
-  color: #7ed6df;
-  margin-bottom: 2rem;
+.site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 /* VIDEO CARDS */
@@ -59,26 +26,55 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
 }
 
 .card {
   background-color: rgba(255, 255, 255, 0.06);
   padding: 2rem;
   border-radius: 12px;
+  text-align: left;
+
+  /* animation start state */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
 }
 
 .card h2 {
-  margin-bottom: 1rem;
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .card-link {
   color: #7ed6df;
   text-decoration: underline;
   font-weight: bold;
-  margin-top: 1rem;
   display: inline-block;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #00ffe0;
 }
 
 /* DESKTOP LAYOUT */
@@ -90,13 +86,15 @@
 
 /* FOOTER */
 .footer {
-  background-color: #0d0825;
+  text-align: center;
   padding: 2rem;
+  background-color: #0d0825;
   color: #7ed6df;
 }
 
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -105,6 +103,10 @@
   width: 24px;
   height: 24px;
   background-size: cover;
+}
+.icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.4);
 }
 
 .icon.fb { background-image: url('/assets/icons/facebook.svg'); }
