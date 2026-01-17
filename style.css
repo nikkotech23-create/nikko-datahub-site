@@ -40,6 +40,7 @@ section {
 .site-header .logo {
     font-size: 1.6rem;
     font-weight: 600;
+    color: white;
     letter-spacing: 0.5px;
 }
 
@@ -62,9 +63,8 @@ section {
 }
 
 .site-header nav a.active {
-    color: white;
-    text-decoration: none;
     font-weight: 600;
+    text-decoration: none;
 }
 @media (max-width: 600px) {
     .site-header {
