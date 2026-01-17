@@ -319,6 +319,75 @@ body.videos-page {
         max-width: 90%;
     }
 }
+/* ─────────────────────────────────────────────
+   VIDEOS PAGE STYLES – Nikko DataHub
+────────────────────────────────────────────── */
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1442; /* distinct from white text */
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Video Cards Centered */
+.video-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin: 3rem auto;
+  max-width: 1000px;
+}
+
+/* Footer with Icons */
+.footer {
+  text-align: left;
+  padding: 2rem;
+  color: #7ed6df;
+  background-color: #1e1442;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.icon.fb { background-image: url('/assets/icons/facebook.svg'); }
+.icon.x  { background-image: url('/assets/icons/x.svg'); }
+.icon.ig { background-image: url('/assets/icons/instagram.svg'); }
+.icon.yt { background-image: url('/assets/icons/youtube.svg'); }
+
 /* Video Grid */
 .contact-section { ... }
 .contact-form { ... }
