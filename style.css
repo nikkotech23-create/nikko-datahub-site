@@ -237,7 +237,29 @@ section {
   font-size: 20px;
 }
 /* Footer */
-.footer {
-  background: #1A4B84;
-  color: white;
+.site-footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
 }
+
+.site-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-footer .social-icons a {
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.site-footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
