@@ -56,84 +56,98 @@ section {
   padding: 80px 20px;
 }
 /* Videos Page */
-.videos-page {
-  background: linear-gradient(to right, #0a3d62, #3c6382);
+body.videos-page {
+  background-color: #2c1e4a;
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar ul {
+.nav ul {
   display: flex;
-  justify-content: center;
   gap: 2rem;
+  padding: 1rem 2rem;
   list-style: none;
-  padding: 1rem;
 }
 
-.navbar a {
+.nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  padding: 4rem 2rem;
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hero-content h1 {
+.intro h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .subheading {
-  font-size: 1.5rem;
-  color: #dff9fb;
+  font-size: 1.25rem;
+  color: #7ed6df;
+  margin-bottom: 2rem;
 }
 
-.video-showcase {
+.video-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
-  margin: 3rem auto;
-  max-width: 1000px;
+  margin-bottom: 3rem;
 }
 
-.video-card {
-  background: rgba(255, 255, 255, 0.1);
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 12px;
-  backdrop-filter: blur(10px);
 }
 
-.video-card h2 {
+.card h2 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.cta-link {
+.card-link {
+  color: #7ed6df;
+  text-decoration: underline;
+  font-weight: bold;
   display: inline-block;
   margin-top: 1rem;
-  color: #00cec9;
+}
+
+.cta {
+  margin-bottom: 2rem;
+}
+
+.cta-link {
+  color: #7ed6df;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.primary-btn {
-  background-color: #00cec9;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .footer {
-  text-align: center;
   padding: 2rem;
   font-size: 0.875rem;
-  color: #dff9fb;
+  color: #7ed6df;
 }
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .video-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-content {
+    text-align: left;
+  }
+}
+
+
 /* Header layout */
 .site-header {
     background-color: #1a1a1a;
