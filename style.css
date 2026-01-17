@@ -75,7 +75,13 @@ body {
   margin: auto;
 }
 
-.grid a {
+.grid-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-card {
   text-decoration: none;
   padding: 20px;
   background: #fafafa;
@@ -86,12 +92,12 @@ body {
   display: block;
 }
 
-.grid a:hover {
+.grid-card:hover {
   background: #f0f0f0;
 }
 
 /* Footer */
-footer {
+.footer {
   padding: 20px;
   text-align: center;
   background: #111;
