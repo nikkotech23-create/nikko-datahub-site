@@ -101,8 +101,9 @@ section {
 
 /* Section grid */
 .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     padding: 3rem 1rem;
     max-width: 1200px;
@@ -110,6 +111,8 @@ section {
 }
 
 .feature-card {
+    flex: 1 1 260px;
+    max-width: 280px;
     background: #fff;
     border-radius: 14px;
     padding: 2rem 1.5rem;
