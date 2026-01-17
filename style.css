@@ -1,10 +1,10 @@
 /* Global reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #111;
+  line-height: 1.6;
 }
-
 /* Navigation bar */
 .navbar {
   background: #111;
