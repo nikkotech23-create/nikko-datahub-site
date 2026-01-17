@@ -79,8 +79,8 @@
         <p>Get in touch for collaborations, questions, or project ideas.</p>
     </a>
 
-    <!-- Videos -->
-    <a href="videos/index.html" class="feature-card">
+    <!-- Videos (featured) -->
+    <a href="videos/index.html" class="feature-card featured">
         <div class="icon">🎬</div>
         <h3>Videos</h3>
         <p>Crash‑course tutorials to help you learn fast.</p>
@@ -93,6 +93,21 @@
             Launch the Streamlit App
         </a>
     </p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".feature-card");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
 </body>
 <footer class="footer">
   <p>© 2025 Nikko DataHub — Built with clarity and creativity.</p>
