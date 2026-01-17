@@ -1,93 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Videos | Nikko DataHub</title>
-
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="../styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos – Nikko DataHub</title>
+  <link rel="stylesheet" href="../styles/main.css" />
 </head>
+<body class="gradient-bg">
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<body>
+  <main class="hero-section">
+    <div class="hero-text">
+      <h1>We design and build successful websites</h1>
+      <p class="subheading">Like these.</p>
+    </div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="logo">Nikko DataHub</div>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../videos/index.html" class="active">Videos</a>
-            <a href="../apps/index.html">Apps</a>
-            <a href="../about/index.html">About</a>
-            <a href="../contact/index.html">Contact</a>
-            <a href="../blog/index.html">Blog</a>
-        </nav>
-    </header>
-
-    <!-- Page Intro -->
-    <section class="videos-header">
-        <h1>Crash‑Course Videos</h1>
-        <p>Short, clear, practical tutorials to help you learn fast.</p>
-    </section>
-
-    <!-- Video Grid -->
     <section class="video-grid">
+      <div class="video-card halo">
+        <h2>HALO</h2>
+        <p>Halos are investments that help you sleep a little better at night.</p>
+        <p>Halos deliver predefined market returns with downside protection so you sleep a little better at night. Welcome to the future.</p>
+        <a href="#" class="cta">Compare</a>
+      </div>
 
-        <!-- Video 1 -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Intro to Data Analysis</h3>
-                <p>A quick overview of essential concepts.</p>
-            </div>
-        </div>
+      <div class="video-card agency">
+        <h2>Your agency never sleeps</h2>
+      </div>
 
-        <!-- Video 2 -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Understanding Python Basics</h3>
-                <p>Learn the fundamentals in minutes.</p>
-            </div>
-        </div>
-
-        <!-- Video 3 -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
-            <div class="info">
-                <h3>What Is Machine Learning?</h3>
-                <p>A simple explanation with examples.</p>
-            </div>
-        </div>
-
+      <div class="video-card level-funded">
+        <h2>Level Funded</h2>
+        <p>Obamacare is driving up the cost of health care.</p>
+        <p>Don't sit back and take it. Fight back with programs that save qualifying companies 30% or more on health benefits.</p>
+        <a href="#" class="cta">Get a free quote</a>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Nikko DataHub</p>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank">📘</a>
-                <a href="https://twitter.com" target="_blank">❌</a>
-                <a href="https://instagram.com" target="_blank">📸</a>
-            </div>
-        </div>
-    </footer>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".video-card");
+    <div class="cta-button">
+      <a href="/contact.html" class="primary-btn">Let's talk – I need a website</a>
+    </div>
+  </main>
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    }, { threshold: 0.2 });
-
-    cards.forEach(card => observer.observe(card));
-});
-</script>
+  <footer class="footer">
+    <p>&copy; 2026 Nikko DataHub</p>
+  </footer>
 </body>
 </html>
-
