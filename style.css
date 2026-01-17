@@ -121,6 +121,8 @@ section {
     color: inherit;
     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .feature-card:hover {
@@ -142,6 +144,31 @@ section {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+}
+.feature-card.featured {
+    background: #f7faff;
+    border: 2px solid #dbe7ff;
+    transform: translateY(-4px);
+}
+.feature-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 900px) {
+    .feature-card {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        max-width: 90%;
+    }
 }
 /* Video Grid */
 .video-grid {
