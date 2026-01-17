@@ -110,21 +110,21 @@ body.videos-page {
   gap: 1rem;
   margin-bottom: 1rem;
 }
-
 .icon {
-  width: 24px;
-  height: 24px;
-  background-size: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  filter: brightness(10); /* makes white icons visible on dark bg */
 }
+
 
 .icon:hover {
   transform: scale(1.2);
   filter: brightness(1.4);
 }
-.icon {
-  filter: brightness(10);
-}
+
 .icon.fb { background-image: url('/assets/icons/facebook.svg'); }
 .icon.x  { background-image: url('/assets/icons/x.svg'); }
 .icon.ig { background-image: url('/assets/icons/instagram.svg'); }
