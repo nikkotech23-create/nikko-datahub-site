@@ -95,7 +95,12 @@ body {
 .grid-card:hover {
   background: #f0f0f0;
 }
-
+/* Page sections (for Apps, About, Contact, Blog) */
+.page-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
 /* Footer */
 .footer {
   padding: 20px;
