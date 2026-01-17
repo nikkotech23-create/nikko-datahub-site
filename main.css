@@ -11,14 +11,19 @@ body.videos-page {
 }
 
 .main-content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 4rem 2rem;
+  text-align: center;
 }
 
 .site-title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
+  color: white;
 }
 
 /* VIDEO CARDS */
@@ -27,14 +32,15 @@ body.videos-page {
   grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 1000px;
-  margin: 0 auto 4rem auto;
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
-.card {
-  background-color: rgba(255, 255, 255, 0.06);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: left;
+@media (min-width: 768px) {
+  .video-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
   /* animation start state */
   opacity: 0;
@@ -53,10 +59,16 @@ body.videos-page {
   }
 }
 
+.card {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
 .card:hover {
-  background-color: rgba(255, 255, 255, 0.12);
   transform: scale(1.02);
-  transition: all 0.3s ease;
 }
 
 .card h2 {
@@ -103,7 +115,9 @@ body.videos-page {
   width: 24px;
   height: 24px;
   background-size: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .icon:hover {
   transform: scale(1.2);
   filter: brightness(1.4);
