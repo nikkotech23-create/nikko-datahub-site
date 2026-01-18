@@ -3,11 +3,17 @@
 ────────────────────────────────────────────── */
 
 body.videos-page {
-  background: linear-gradient(to bottom right, #1a1440, #0f0a28);
-  color: white;
-  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
-  padding: 0;
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #1a0033 25%,
+    #4b0082 55%,
+    #b300ff 80%,
+    #ff4dff 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .main-content {
