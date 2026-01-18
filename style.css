@@ -253,7 +253,17 @@ body.videos-page {
 .intro h2 {
   color: #1A4B84;
 }
+.ndh-intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
 
+.ndh-intro p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 /* Section grid */
 .feature-grid {
     display: flex;
