@@ -206,37 +206,41 @@ body.videos-page {
         margin-top: 0.5rem;
     }
 }
-/* Navigation bar */
-.navbar {
+/* NAVBAR FIX FOR APPS PAGE */
+
+.header {
+  background-color: #b366ff; /* light purple */
+  padding: 1rem 2rem;
+}
+
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b366ff; /* light purple */
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-.nav-left {
+.logo a {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-}
-
-.nav-right a {
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-left: 1.5rem;
   text-decoration: none;
 }
 
-.nav-right a:hover {
-  text-decoration: underline;
+.navbar .nav-inner {
+  display: flex;
+  gap: 1.5rem;
 }
 
+.navbar .nav-link {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
 /* Hero section */
 .hero {
   background: var(--bg-light);
