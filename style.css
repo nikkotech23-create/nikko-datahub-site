@@ -403,17 +403,19 @@ section.intro p {
   margin: auto;
   padding: 80px 20px;
 }
-section.page-section h1 {
+.page-section h1 {
   color: #ffffff;
   font-weight: 700;
   font-size: 2.4rem;
   text-align: center;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
-section.page-section p {
+
+.page-section p {
   color: #ffffff;
   text-align: center;
 }
+/* Contact section */
 .contact-section {
     background: linear-gradient(
     135deg,
