@@ -451,6 +451,18 @@ body.videos-page {
 .contact-form button:hover {
     background-color: #5c52b3;
 }
+.get-in-touch {
+  background: linear-gradient(
+    135deg,
+    #1a1a1a 0%,
+    #5e2a84 30%,
+    #c94fe7 70%,
+    #ffb3ff 100%
+  );
+  padding: 3rem;
+  border-radius: 12px;
+  color: white;
+}
 /* Footer */
 .site-footer {
     background-color: #1a1a1a;
