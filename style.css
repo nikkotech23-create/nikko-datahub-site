@@ -14,13 +14,19 @@
   --radius: 8px;
   --shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
+
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #2e1f4d, #3a2d6f, #4b3f91, #5c52b3, #6d65d5);
-    background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
-    color: white;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #1a0033 25%,
+    #4b0082 55%,
+    #b300ff 80%,
+    #ff4dff 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Optional: smooth animated gradient */
