@@ -251,11 +251,12 @@ body.videos-page {
 }
 /* Intro section */
 .intro h2 {
-  color: #1A4B84;
-}
-section.ndh-intro h2,
-section.ndh-intro p {
   color: #ffffff;
+  text-align: center;
+}
+.intro p {
+  color: #ffffff;
+  text-align: center;
 }
 /* Section grid */
 .feature-grid {
