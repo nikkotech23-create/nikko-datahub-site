@@ -250,11 +250,8 @@ body.videos-page {
   margin: auto;
 }
 /* Intro section */
-.intro h2 {
-  color: #ffffff;
-  text-align: center;
-}
-.intro p {
+section.intro h2,
+section.intro p {
   color: #ffffff;
   text-align: center;
 }
