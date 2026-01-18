@@ -520,7 +520,9 @@ section.intro p {
   margin-left: auto;      /* works in flex/block */
   margin-right: auto;
 }
-
+.app-card h3 {
+  color: #ff66cc;
+}
 /* Hover glow + lift */
 .app-card:hover {
   transform: translateY(-6px);
