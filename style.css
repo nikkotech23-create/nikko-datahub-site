@@ -506,6 +506,7 @@ section.intro p {
 @keyframes gradientShift { ... }
 /* Streamlit App Card — Pink–Purple Light Theme */
 .app-card {
+  margin-top: 3rem;
   background: rgba(255, 0, 200, 0.08); /* soft pink-purple wash */
   border: 1px solid rgba(255, 0, 200, 0.25);
   padding: 2rem;
