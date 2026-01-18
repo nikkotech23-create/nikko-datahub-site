@@ -504,44 +504,53 @@ section.intro p {
     transform: scale(1.2);
 }
 @keyframes gradientShift { ... }
-/* Streamlit App Card — extends your existing feature-card styling */
+/* Streamlit App Card — Pink–Purple Light Theme */
 .app-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 0, 200, 0.08); /* soft pink-purple wash */
+  border: 1px solid rgba(255, 0, 200, 0.25);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  backdrop-filter: blur(6px);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  justify-self: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+  /* Centering for all layouts */
+  justify-self: center;   /* works in grid */
+  margin-left: auto;      /* works in flex/block */
+  margin-right: auto;
 }
 
 /* Hover glow + lift */
 .app-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 28px rgba(255, 0, 255, 0.45),
+              0 0 12px rgba(255, 120, 255, 0.35);
+  border-color: rgba(255, 0, 255, 0.45);
 }
 
 /* Icon styling */
 .app-card .card-icon {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
+  color: #ff66ff; /* soft neon pink */
 }
 
 /* Button styling */
 .app-card .card-button {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #ff00cc, #7f00ff);
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff66cc, #b266ff);
   color: white;
   text-decoration: none;
   font-weight: 600;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.25);
 }
 
 /* Button hover */
 .app-card .card-button:hover {
-  opacity: 0.85;
+  opacity: 0.9;
+  box-shadow: 0 0 16px rgba(255, 0, 255, 0.4);
 }
