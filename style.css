@@ -513,6 +513,7 @@ section.intro p {
   text-align: center;
   backdrop-filter: blur(6px);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  justify-self: center;
 }
 
 /* Hover glow + lift */
