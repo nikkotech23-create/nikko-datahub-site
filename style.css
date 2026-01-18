@@ -28,7 +28,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Optional: smooth animated gradient */
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
