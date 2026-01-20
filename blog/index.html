@@ -1,35 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Nikko DataHub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
+
 <body>
 
- <header class="header">
-  <div class="header-inner">
+  <!-- Animated data grid background -->
+  <div class="data-grid-bg"></div>
 
+  <!-- HEADER -->
+  <header class="site-header">
     <div class="logo">
-      <a href="/">NDH</a>
+      <div class="ndh-logo">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" stroke="var(--accent)" stroke-width="4"/>
+          <path d="M30 65 L30 35 L70 65 L70 35" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+          <text x="50" y="55" text-anchor="middle" fill="var(--accent)" font-size="22" font-weight="700">NDH</text>
+        </svg>
+      </div>
+      <span class="logo-text">NDH</span>
     </div>
 
-    <nav class="navbar">
-      <div class="nav-inner">
-        <a href="/" class="nav-link home-link">Home</a>
-        <a href="/apps/" class="nav-link">Apps</a>
-        <a href="/about/" class="nav-link">About</a>
-        <a href="/blog/" class="nav-link">Blog</a>
-      </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../videos/index.html">Videos</a>
+      <a href="../apps/index.html">Apps</a>
+      <a href="../about/index.html">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../blog/index.html" class="active">Blog</a>
     </nav>
 
-  </div>
-</header>
-  <section class="page-section">
-    <h1>Blog</h1>
-    <p>Read updates, articles, and insights.</p>
-  </section>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+  </header>
 
+  <!-- MAIN CONTENT -->
+  <main style="max-width: 900px; margin: 0 auto; padding: 3rem 1rem;">
+
+    <!-- FEATURED IMAGE -->
+    <section class="page-section" style="margin-bottom: 3rem;">
+      <img 
+        src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80" 
+        alt="Data science visualization" 
+        style="width: 100%; border-radius: 16px; margin-bottom: 1.5rem; box-shadow: 0 0 24px rgba(0,0,0,0.4);"
+      >
+
+      <h1>Welcome to the Nikko DataHub Blog</h1>
+      <p>
+        This blog is where ideas take shape — a place to explore data science, machine learning, 
+        visualization, and the creative process behind building tools and insights. 
+        Every article is written with clarity and curiosity in mind, helping you understand 
+        complex topics through simple explanations and real examples.
+      </p>
+    </section>
+
+    <!-- FIRST ARTICLE -->
+    <section class="page-section" style="margin-bottom: 3rem;">
+      <h1>The Beauty of Data: Why Patterns Matter</h1>
+      <p>
+        Data is more than numbers — it’s a story waiting to be uncovered. 
+        Whether you're analyzing trends, building models, or visualizing insights, 
+        the real magic happens when patterns begin to emerge. 
+        These patterns help us understand behavior, predict outcomes, 
+        and make decisions with confidence.
+      </p>
+
+      <p>
+        In this article, we explore why pattern recognition is at the heart of data science, 
+        how humans naturally seek structure in information, and how modern tools help us 
+        uncover insights that were once invisible. 
+        From clustering algorithms to time‑series forecasting, 
+        the journey from raw data to meaningful understanding is both technical and deeply creative.
+      </p>
+
+      <p>
+        Stay tuned — more articles, tutorials, and deep dives are coming soon.
+      </p>
+    </section>
+
+    <!-- BLOG CARDS FOR FUTURE POSTS -->
+    <section class="feature-grid">
+      <a href="#" class="feature-card">
+        <div class="icon">📈</div>
+        <h3>Understanding Neural Networks</h3>
+        <p>A beginner‑friendly look at how neural networks learn and make predictions.</p>
+      </a>
+
+      <a href="#" class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Visualizing Data the Right Way</h3>
+        <p>How to choose the right chart for the right story.</p>
+      </a>
+
+      <a href="#" class="feature-card">
+        <div class="icon">⚙️</div>
+        <h3>Deploying Your First ML Model</h3>
+        <p>A practical guide to turning your model into a real application.</p>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Nikko DataHub</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">📘</a>
+        <a href="https://twitter.com" target="_blank">❌</a>
+        <a href="https://instagram.com" target="_blank">📸</a>
+        <a href="https://youtube.com" target="_blank">▶️</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
 </body>
 </html>
