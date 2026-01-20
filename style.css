@@ -14,20 +14,20 @@
   --radius: 8px;
   --shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
-
 body {
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    #000000 0%,
-    #1a0033 25%,
-    #4b0082 55%,
-    #b300ff 80%,
-    #ff4dff 100%
-  );
-  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Deep tech-inspired background */
+  background-color: #0f172a;
+  background-image:
+      radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.15), transparent 60%),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.15), transparent 60%),
+      url("https://www.transparenttextures.com/patterns/cubes.png");
   background-size: cover;
+  color: #e2e8f0;
 }
+
 html {
   scroll-behavior: smooth;
 }
