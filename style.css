@@ -508,3 +508,7 @@ section.intro p {
     padding: 1rem;
   }
 }
+.video-grid .video-card {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
