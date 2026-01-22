@@ -465,22 +465,35 @@ section.intro p {
 }
 
 /* Video grids (for videos page) */
-.video-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-  margin: 3rem auto;
-  max-width: 1000px;
-}
-
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+}
+
+.video-card p {
+  margin-top: 8px;
+  line-height: 1.4;
 }
 
 @media (max-width: 900px) {
