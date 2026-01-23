@@ -12,35 +12,37 @@
   <div class="data-grid-bg"></div>
 
   <!-- Navigation bar -->
- <header class="site-header">
+<header class="site-header">
 
-  <div class="logo-wrapper">
-    <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <div class="logo">
+    <div class="ndh-logo">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 
-      <defs>
-        <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00aaff" flood-opacity="1"/>
-          <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00aaff" flood-opacity="0.6"/>
-        </filter>
-      </defs>
+        <defs>
+          <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00aaff" flood-opacity="1"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00aaff" flood-opacity="0.6"/>
+          </filter>
+        </defs>
 
-      <circle cx="100" cy="100" r="80"
-              stroke="#00aaff"
-              stroke-width="6"
-              fill="none"
-              filter="url(#neon-glow)" />
+        <circle cx="100" cy="100" r="80"
+                stroke="#00aaff"
+                stroke-width="6"
+                fill="none"
+                filter="url(#neon-glow)" />
 
-      <text x="50%" y="50%"
-            text-anchor="middle"
-            dominant-baseline="central"
-            font-size="90"
-            font-family="Arial, sans-serif"
-            fill="#00aaff"
-            filter="url(#neon-glow)">
-        N
-      </text>
+        <text x="50%" y="50%"
+              text-anchor="middle"
+              dominant-baseline="central"
+              font-size="90"
+              font-family="Arial, sans-serif"
+              fill="#00aaff"
+              filter="url(#neon-glow)">
+          N
+        </text>
 
-    </svg>
+      </svg>
+    </div>
 
     <span class="logo-text">NDH</span>
   </div>
@@ -57,7 +59,6 @@
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
 
 </header>
-
   <section class="page-section app-section">
     <h1>MyApp</h1>
     <p>A simple interactive tool built with Streamlit.</p>
