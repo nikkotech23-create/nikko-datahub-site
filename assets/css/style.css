@@ -262,40 +262,41 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
-/* Neon circular social buttons */
-.social-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
+/* FINAL — Neon circular social buttons */
+footer .social-buttons {
+  margin-top: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 18px !important;
 }
 
-.social-buttons a {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer .social-buttons a {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 50% !important;
 
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-  background: linear-gradient(90deg, #ff00cc, #00ffff);
-  color: #ffffff;
-  text-decoration: none;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+
+  background: linear-gradient(90deg, #ff00cc, #00ffff) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
 
   box-shadow:
     0 0 18px rgba(0, 255, 255, 0.7),
-    0 0 14px rgba(255, 0, 204, 0.6);
+    0 0 14px rgba(255, 0, 204, 0.6) !important;
 
-  transition: 0.25s ease;
+  transition: 0.25s ease !important;
 }
 
-.social-buttons a:hover {
-  transform: scale(1.22);
+footer .social-buttons a:hover {
+  transform: scale(1.22) !important;
   box-shadow:
     0 0 28px rgba(255, 0, 204, 1),
-    0 0 36px rgba(0, 255, 255, 1);
+    0 0 36px rgba(0, 255, 255, 1) !important;
 }
