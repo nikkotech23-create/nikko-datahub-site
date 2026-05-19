@@ -1,77 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Nikko DataHub – Search</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikko DataHub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="assets/img/logo.png"></div>
-    <nav class="main-nav">
+
+  <!-- TOP NAV BAR -->
+  <header class="navbar">
+    <img src="assets/nikkodatahub-logo.png" class="logo-top" alt="Nikko DataHub Logo">
+    <nav class="nav-links">
       <a href="index.html">Search</a>
       <a href="datahub.html">DataHub</a>
       <a href="videos.html">Videos</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
   </header>
 
-  <main>
-    <!-- page-specific content here -->
-    <!-- inside <main> of index.html -->
-<section class="section">
-  <h1>Search Nikko DataHub</h1>
-  <p>Search across videos, datasets, and knowledge pages.</p>
+  <!-- MAIN CONTENT -->
+  <main class="content">
 
-  <div class="search-box">
-    <input id="search-input" type="text" placeholder="Search data, videos, topics..." />
-    <button id="search-btn">Search</button>
-  </div>
+    <!-- SUPPORTER CARD -->
+    <section class="supporter-card">
+      <img src="assets/nikkodatahub-logo.png" class="logo-small" alt="Nikko DataHub Small Logo">
 
-  <div id="search-results"></div>
-</section>
+      <a href="YOUR-LINK-HERE" class="support-btn">
+        Become a Supporter
+      </a>
 
-<section class="section">
-  <h2>Chat with NikkoBot</h2>
-  <div class="chat-container">
-    <div id="chat-log"></div>
-    <div class="chat-input-row">
-      <input id="chat-input" type="text" placeholder="Ask about data, games, computing..." />
-      <button id="chat-send">Send</button>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="support-card">
-  <img src="assets/img/logo.png" alt="" class="support-logo">
-  <h2>Support Nikko DataHub</h2>
-  <p>Help keep the neon world alive! Your support fuels new games, assets, and creative upgrades.</p>
-  <div class="support-buttons">
-    <a href="https://www.buymeacoffee.com/YOURNAME" class="btn neon">☕ Buy Me a Coffee</a>
-    <a href="https://paypal.me/YOURNAME" class="btn neon">💸 Donate via PayPal</a>
-  </div>
-</div>
-
-</section>  
-
-<script src="assets/js/search.js"></script>
+      <div class="social-icons">
+        <a href="https://x.com/nikkodatahub" target="_blank">🌀</a>
+        <a href="https://youtube.com/@nikkodatahub" target="_blank">▶️</a>
+        <a href="https://instagram.com/nikkodatahub" target="_blank">📸</a>
+      </div>
+    </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="social-icons">
-      <a href="https://x.com/nikkodatahub" target="_blank">🌀</a>
-      <a href="https://youtube.com/@nikkodatahub" target="_blank">▶️</a>
-      <a href="https://instagram.com/nikkodatahub" target="_blank">📸</a>
-    </div>
-
-    <p>© 2026 Nikko DataHub · Built with HTML5 / CSS / JavaScript</p>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-  <!-- page-specific JS below -->
 </body>
 </html>
-
