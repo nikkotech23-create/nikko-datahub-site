@@ -262,15 +262,15 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
-/* Neon circular social buttons (same style as Become a Supporter) */
-.social-icons {
+/* Neon circular social buttons */
+.social-buttons {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 18px;
 }
 
-.social-icons a {
+.social-buttons a {
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -293,17 +293,9 @@ button:hover {
   transition: 0.25s ease;
 }
 
-.social-icons a:hover {
+.social-buttons a:hover {
   transform: scale(1.22);
   box-shadow:
     0 0 28px rgba(255, 0, 204, 1),
     0 0 36px rgba(0, 255, 255, 1);
-}
-
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  box-shadow:
-    0 0 22px rgba(255, 0, 204, 1),
-    0 0 28px rgba(0, 255, 255, 1);
 }
