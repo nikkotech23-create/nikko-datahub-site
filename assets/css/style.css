@@ -23,6 +23,38 @@ body {
   color: var(--text);
 }
 
+.mega-search {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.mega-search input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.4);
+  background: #020617;
+  color: var(--text);
+}
+
+.mega-search button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0,255,255,0.5);
+  transition: 0.25s ease;
+}
+
+.mega-search button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 24px rgba(255,0,204,0.8);
+}
+
 /* Header / nav */
 .site-header {
   display: flex;
