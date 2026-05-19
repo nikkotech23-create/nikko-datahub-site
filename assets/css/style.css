@@ -262,14 +262,14 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
- .footer-social {
+.social-icons {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 22px;
 }
 
-.footer-social a {
+.social-icons a {
   font-size: 28px;
   width: 60px;
   height: 60px;
@@ -282,18 +282,17 @@ button:hover {
   color: #ffffff;
   text-decoration: none;
 
-  box-shadow: 
+  box-shadow:
     0 0 18px rgba(0, 255, 255, 0.7),
     0 0 12px rgba(255, 0, 204, 0.6);
 
   transition: 0.3s ease;
 }
 
-.footer-social a:hover {
+.social-icons a:hover {
   transform: scale(1.25);
-  box-shadow: 
+  box-shadow:
     0 0 30px rgba(255, 0, 204, 1),
     0 0 40px rgba(0, 255, 255, 1);
 }
-
  
