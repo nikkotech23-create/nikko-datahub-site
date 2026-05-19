@@ -36,15 +36,8 @@ body {
   background: linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.6));
 }
 
-.logo {
-  width: 180px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .logo-top {
-  height: 48px;
+  height: 42px;
   width: auto;
   margin-left: 20px;
 }
