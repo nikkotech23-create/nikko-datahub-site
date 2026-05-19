@@ -40,6 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "data",
       url: "https://www.youtube.com/watch?v=QISvmiwOIYI"
     },
+    {
+      title: "Coding Music",
+      platform: "Youtube",
+      category: "data",
+      url: " https://www.youtube.com/watch?v=IjseQOHq_mU&list=RDIjseQOHq_mU&start_radio=1"
+    },
+    {
+      title: "Video Games",
+      platform: "Youtube",
+      category: "games",
+      url: "https://www.youtube.com/watch?v=8Ryn7qm3CvI"
+    },
   ];
 
   function render(filter = "all") {
