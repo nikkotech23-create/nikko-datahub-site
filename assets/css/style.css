@@ -37,11 +37,10 @@ body {
 }
 
 .logo {
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
-.logo span {
-  color: var(--accent-soft);
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-nav {
@@ -69,6 +68,23 @@ body {
   color: var(--text);
   font-size: 1.4rem;
 }
+
+.support-btn {
+  display: inline-block;
+  padding: 18px 24px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.support-btn:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 204, 0.8);
+  transform: scale(1.05);
+}
+
 
 /* Layout */
 main {
@@ -226,5 +242,18 @@ button:hover {
 
 .filters .filter.active {
   background: #020617;
+
+.social-icons a {
+  font-size: 28px;
+  margin: 0 10px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #ff00cc;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 20px #00ffff;
+}
+  
   border: 1px solid var(--accent-soft);
 }
