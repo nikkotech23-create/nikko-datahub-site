@@ -37,18 +37,20 @@ body {
 }
 
 .logo-top {
-  height: 90px;
+  height: 110px;
   width: auto;
   margin-left: 20px;
 }
 
 .logo-small {
-  height: 50px;
+  height: 60px;
   width: auto;
   display: block;
-  margin: 0 auto 14px auto;
-  opacity: 0.95;
+  margin: 0 auto 16px auto;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #ff00cc);
 }
+
 
 .supporter-card {
   text-align: center;
@@ -260,26 +262,26 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
-.social-icons {
-  margin-top: 20px;
+ .social-icons {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 22px;
 }
 
 .social-icons a {
   font-size: 28px;
-  padding: 12px 18px;
-  border-radius: 40px;
-  background: linear-gradient(90deg, #ff00cc, #00ffff);
-  color: #fff;
+  padding: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff00cc, #00ffff);
+  color: #ffffff;
   text-decoration: none;
-  box-shadow: 0 0 18px rgba(0, 255, 255, 0.6);
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.7);
   transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 28px rgba(255, 0, 204, 0.9);
+  transform: scale(1.25);
+  box-shadow: 0 0 30px rgba(255, 0, 204, 1);
 }
-
+ 
