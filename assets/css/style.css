@@ -262,37 +262,47 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
-.social-icons {
+.site-footer .social-icons {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 22px;
 }
 
-.social-icons a {
+.site-footer .social-icons a {
   font-size: 28px;
+
+  /* FORCE CIRCLE SHAPE */
   width: 60px;
   height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  /* NEON GRADIENT BACKGROUND */
   background: radial-gradient(circle at top left, #ff00cc, #00ffff);
+
+  /* ICON COLOR */
   color: #ffffff;
   text-decoration: none;
 
+  /* NEON GLOW */
   box-shadow:
     0 0 18px rgba(0, 255, 255, 0.7),
     0 0 12px rgba(255, 0, 204, 0.6);
 
-  transition: 0.3s ease;
+  /* SMOOTH ANIMATION */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-icons a:hover {
+.site-footer .social-icons a:hover {
   transform: scale(1.25);
   box-shadow:
     0 0 30px rgba(255, 0, 204, 1),
     0 0 40px rgba(0, 255, 255, 1);
 }
- 
+
