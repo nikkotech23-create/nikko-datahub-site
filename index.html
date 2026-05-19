@@ -5,6 +5,7 @@
   <title>Nikko DataHub – Search</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -23,11 +24,13 @@
   </header>
 
   <main>
+
+    <!-- MEGA SEARCH BAR -->
     <div class="mega-search">
       <input id="megaQuery" type="text" placeholder="Search everywhere…">
       <button onclick="megaSearch()">Search</button>
     </div>
-    
+
     <!-- SEARCH SECTION -->
     <section class="section">
       <h1>Search Nikko DataHub</h1>
@@ -55,71 +58,61 @@
 
     <!-- SUPPORTER SECTION -->
     <section class="section supporter-card">
-
-      <!-- SMALL LOGO ABOVE BUTTON -->
       <img src="assets/img/logo.png" class="logo-small" alt="Nikko DataHub Small Logo">
-
-      <!-- SUPPORT BUTTON -->
       <a href="YOUR-LINK-HERE" class="support-btn">Become a Supporter</a>
-
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    
-  <div class="social-buttons">
-    <a href="https://x.com/nikkodatahub" target="_blank" class="btn-x">X</a>
-    <a href="https://youtube.com/@nikkodatahub" target="_blank" class="btn-yt">YT</a>
-    <a href="https://instagram.com/nikkodatahub" target="_blank" class="btn-ig">IG</a>
-  </div>
+    <div class="social-buttons">
+      <a href="https://x.com/nikkodatahub" target="_blank" class="btn-x">X</a>
+      <a href="https://youtube.com/@nikkodatahub" target="_blank" class="btn-yt">YT</a>
+      <a href="https://instagram.com/nikkodatahub" target="_blank" class="btn-ig">IG</a>
+    </div>
 
-  <p>© 2026 Nikko DataHub · Built with HTML5 / CSS / JavaScript</p>
-</footer>
+    <p>© 2026 Nikko DataHub · Built with HTML5 / CSS / JavaScript</p>
+  </footer>
 
+  <!-- MEGA SEARCH FUNCTION (must load BEFORE external scripts) -->
+  <script>
+    function megaSearch() {
+      const q = encodeURIComponent(document.getElementById("megaQuery").value);
+
+      const urls = [
+        `https://www.google.com/search?q=${q}`,
+        `https://www.bing.com/search?q=${q}`,
+        `https://duckduckgo.com/?q=${q}`,
+        `https://search.brave.com/search?q=${q}`,
+        `https://search.yahoo.com/search?p=${q}`,
+
+        `https://www.youtube.com/results?search_query=${q}`,
+        `https://www.dailymotion.com/search/${q}`,
+        `https://vimeo.com/search?q=${q}`,
+
+        `https://en.wikipedia.org/wiki/Special:Search?search=${q}`,
+        `https://stackoverflow.com/search?q=${q}`,
+
+        `https://www.bbc.co.uk/search?q=${q}`,
+        `https://www.cnn.com/search?q=${q}`,
+        `https://www.reuters.com/site-search/?query=${q}`,
+        `https://apnews.com/search?q=${q}`,
+        `https://www.aljazeera.com/Search/?q=${q}`,
+        `https://www.theguardian.com/search?q=${q}`,
+
+        `https://www.digi24.ro/cautare?q=${q}`,
+        `https://www.hotnews.ro/cautare?keyword=${q}`,
+        `https://www.libertatea.ro/?s=${q}`
+      ];
+
+      urls.forEach(url => window.open(url, "_blank"));
+    }
+  </script>
+
+  <!-- EXTERNAL SCRIPTS (load AFTER megaSearch) -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/search.js"></script>
 
-  <script>
-function megaSearch() {
-  const q = encodeURIComponent(document.getElementById("megaQuery").value);
-
-  const urls = [
-    // Search engines
-    `https://www.google.com/search?q=${q}`,
-    `https://www.bing.com/search?q=${q}`,
-    `https://duckduckgo.com/?q=${q}`,
-    `https://search.brave.com/search?q=${q}`,
-    `https://search.yahoo.com/search?p=${q}`,
-
-    // Video
-    `https://www.youtube.com/results?search_query=${q}`,
-    `https://www.dailymotion.com/search/${q}`,
-    `https://vimeo.com/search?q=${q}`,
-
-    // Knowledge
-    `https://en.wikipedia.org/wiki/Special:Search?search=${q}`,
-    `https://stackoverflow.com/search?q=${q}`,
-
-    // Global news
-    `https://www.bbc.co.uk/search?q=${q}`,
-    `https://www.cnn.com/search?q=${q}`,
-    `https://www.reuters.com/site-search/?query=${q}`,
-    `https://apnews.com/search?q=${q}`,
-    `https://www.aljazeera.com/Search/?q=${q}`,
-    `https://www.theguardian.com/search?q=${q}`,
-
-    // Romania news
-    `https://www.digi24.ro/cautare?q=${q}`,
-    `https://www.hotnews.ro/cautare?keyword=${q}`,
-    `https://www.libertatea.ro/?s=${q}`
-  ];
-
-  urls.forEach(url => window.open(url, "_blank"));
-}
-</script>
 </body>
-
-  
 </html>
-
