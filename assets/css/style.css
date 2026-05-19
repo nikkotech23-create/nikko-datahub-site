@@ -37,13 +37,13 @@ body {
 }
 
 .logo-top {
-  height: 42px;
+  height: 70px;
   width: auto;
   margin-left: 20px;
 }
 
 .logo-small {
-  height: 32px;
+  height: 50px;
   width: auto;
   display: block;
   margin: 0 auto 10px auto;
@@ -253,14 +253,14 @@ button:hover {
 
 .social-icons a {
   font-size: 40px;
-  margin: 0 10px;
+  margin: 0 14px;
   color: #00ffff;
-  text-shadow: 0 0 10px #ff00cc;
+  text-shadow: 0 0 12px #ff00cc;
   transition: 0.3s;
 }
 .social-icons a:hover {
   color: #ff00cc;
-  text-shadow: 0 0 20px #00ffff;
+  text-shadow: 0 0 24px #00ffff;
 }
   
   border: 1px solid var(--accent-soft);
