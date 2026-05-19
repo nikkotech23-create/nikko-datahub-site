@@ -5,24 +5,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const videos = [
     {
-      title: "Intro to Data Visualization",
+      title: "Web Apps with Python",
       platform: "YouTube",
       category: "data",
-      url: "https://www.youtube.com/watch?v=XXXXXXX",
+      url: "https://www.youtube.com/watch?v=ZZ4B0QUHuNc&list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE",
     },
     {
-      title: "Python for Games – Basics",
+      title: "Skyburst Force - Gameplay",
       platform: "YouTube",
       category: "games",
-      url: "https://www.youtube.com/watch?v=YYYYYYY",
+      url: "https://www.youtube.com/watch?v=A1ohOPzs84w",
     },
     {
-      title: "Linux Tips for Developers",
-      platform: "Dailymotion",
-      category: "computing",
-      url: "https://www.dailymotion.com/video/ZZZZZZZ",
+      title: "Python Games - Basics",
+      platform: "Youtube",
+      category: "games",
+      url: "https://www.youtube.com/watch?v=wRiCKCdnLHY&list=PLCC34OHNcOtpOG96Uwh3VGkmpZ7qTB5dx",
     },
-    // add more as you upload
+    {
+      title: "Linux for gaming in 2026",
+      platform: "Youtube",
+      category: "games",
+      url: "https://www.youtube.com/watch?v=kUEUzJ1gU9E"
+    },
+    {
+      title: "AI, ML, Gen AI",
+      platform: "Youtube",
+      category: "computing",
+      url: "https://www.youtube.com/watch?v=qYNweeDHiyU"
+    },
+    {
+      title: "Data Science Course 2026",
+      platform: "Youtube",
+      category: "data",
+      url: "https://www.youtube.com/watch?v=QISvmiwOIYI"
+    },
   ];
 
   function render(filter = "all") {
