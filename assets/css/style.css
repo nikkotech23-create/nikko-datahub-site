@@ -266,15 +266,15 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
-/* FORCE neon circular social icons */
-.site-footer .social-icons {
+/* FINAL OVERRIDE — Neon Circular Social Icons */
+footer.site-footer .social-icons {
   margin-top: 20px !important;
   display: flex !important;
   justify-content: center !important;
   gap: 22px !important;
 }
 
-.site-footer .social-icons a {
+footer.site-footer .social-icons a {
   font-size: 28px !important;
 
   width: 60px !important;
@@ -298,7 +298,7 @@ button:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-.site-footer .social-icons a:hover {
+footer.site-footer .social-icons a:hover {
   transform: scale(1.25) !important;
   box-shadow:
     0 0 30px rgba(255, 0, 204, 1),
