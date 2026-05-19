@@ -266,18 +266,23 @@ button:hover {
   justify-content: center;
   gap: 18px;
 }
-  
+
 .social-icons a {
-  font-size: 40px;
-  margin: 0 14px;
-  color: #00ffff;
-  text-shadow: 0 0 12px #ff00cc;
-  transition: 0.3s;
+  font-size: 28px;
+  padding: 12px 18px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.6);
+  transition: 0.3s ease;
 }
+
 .social-icons a:hover {
-  color: #ff00cc;
-  text-shadow: 0 0 24px #00ffff;
+  transform: scale(1.1);
+  box-shadow: 0 0 28px rgba(255, 0, 204, 0.9);
 }
+
   
   border: 1px solid var(--accent-soft);
 }
