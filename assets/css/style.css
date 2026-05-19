@@ -43,6 +43,38 @@ body {
   margin: 0 auto;
 }
 
+.logo-top {
+  height: 48px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.logo-small {
+  height: 32px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  opacity: 0.9;
+}
+
+.support-btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.support-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 204, 0.8);
+}
+
+
 .main-nav {
   display: flex;
   gap: 1rem;
@@ -68,23 +100,6 @@ body {
   color: var(--text);
   font-size: 1.4rem;
 }
-
-.support-btn {
-  display: inline-block;
-  padding: 18px 24px;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #ff00cc, #00ffff);
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
-  transition: all 0.3s ease;
-}
-.support-btn:hover {
-  box-shadow: 0 0 30px rgba(255, 0, 204, 0.8);
-  transform: scale(1.05);
-}
-
 
 /* Layout */
 main {
