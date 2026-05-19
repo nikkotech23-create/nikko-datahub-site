@@ -41,32 +41,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Chatbot (placeholder)
-  const chatLog = document.getElementById("chat-log");
-  const chatInput = document.getElementById("chat-input");
-  const chatSend = document.getElementById("chat-send");
+  
+const chatInput = document.getElementById("chat-input");
+const chatSend = document.getElementById("chat-send");
+const chatLog  = document.getElementById("chat-log");
 
-  function addMessage(sender, text) {
-    const div = document.createElement("div");
-    div.className = `chat-msg chat-${sender}`;
-    div.textContent = text;
-    chatLog.appendChild(div);
-    chatLog.scrollTop = chatLog.scrollHeight;
+let chatHistory = [];
+
+function appendMessage(role, text) {
+  const div = document.createElement("div");
+  div.className = `chat-msg chat-${role}`;
+  div.textContent = text;
+  chatLog.appendChild(div);
+  chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+async function sendMessage() {
+  const text = chatInput.value.trim();
+  if (!text) return;
+
+  appendMessage("user", text);
+  chatHistory.push({ role: "user", content: text });
+  chatInput.value = "";
+
+  try {
+    const res = await fetch("https://YOUR-WORKER-SUBDOMAIN.workers.dev/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: chatHistory })
+    });
+
+    const data = await res.json();
+    const reply = data.reply || "No reply received.";
+    appendMessage("assistant", reply);
+    chatHistory.push({ role: "assistant", content: reply });
+  } catch (err) {
+    appendMessage("assistant", "NikkoBot hit a glitch in the grid. Try again in a moment.");
+    console.error(err);
   }
+}
 
-  function sendMessage() {
-    const text = chatInput.value.trim();
-    if (!text) return;
-    addMessage("user", text);
-    chatInput.value = "";
-
-    // later: replace with real API call
-    setTimeout(() => {
-      addMessage("bot", "NikkoBot: I’ll be smarter soon. For now, try the search or check DataHub/Videos.");
-    }, 400);
-  }
-
-  chatSend.addEventListener("click", sendMessage);
-  chatInput.addEventListener("keydown", e => {
-    if (e.key === "Enter") sendMessage();
-  });
+chatSend.addEventListener("click", sendMessage);
+chatInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") sendMessage();
 });
