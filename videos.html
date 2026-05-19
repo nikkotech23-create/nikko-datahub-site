@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nikko DataHub – Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Nikko<span>DataHub</span></div>
+    <nav class="main-nav">
+      <a href="index.html">Search</a>
+      <a href="datahub.html">DataHub</a>
+      <a href="videos.html">Videos</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <!-- page-specific content here -->
+    <!-- inside <main> of videos.html -->
+<section class="section">
+  <h1>Video Hub</h1>
+  <p>Curated videos on computing, games, and data from YouTube, Dailymotion, and more.</p>
+
+  <div class="filters">
+    <button data-filter="all" class="filter active">All</button>
+    <button data-filter="computing" class="filter">Computing</button>
+    <button data-filter="games" class="filter">Games</button>
+    <button data-filter="data" class="filter">Data</button>
+  </div>
+
+  <div class="video-grid" id="video-grid">
+    <!-- cards injected by JS -->
+  </div>
+</section>
+
+<script src="assets/js/videos.js"></script>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Nikko DataHub · Built with HTML5 / CSS / JavaScript</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <!-- page-specific JS below -->
+</body>
+</html>
