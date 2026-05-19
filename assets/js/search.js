@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     chatInput.value = "";
 
     try {
-      const res = await fetch("https://YOUR-WORKER-SUBDOMAIN.workers.dev/chat", {
+      const res = await fetch("https://nikkobot.nikkotech23.workers.dev/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: chatHistory })
