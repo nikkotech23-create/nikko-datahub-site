@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js">  </script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"> </script>
+  <meta charset="UTF-8" />
+  <title>Nikko DataHub – Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Nikko<span>DataHub</span></div>
+    <nav class="main-nav">
+      <a href="index.html">Search</a>
+      <a href="datahub.html">DataHub</a>
+      <a href="videos.html">Videos</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <!-- page-specific content here -->
+    <section class="section">
+      <h1>DataHub – Upload & Visualize</h1>
+      <p>Upload CSV files and quickly explore your data with charts.</p>
+
+  <div class="upload-area">
+    <input type="file" id="csv-file" accept=".csv" />
+    <button id="load-sample">Load sample data</button>
+  </div>
+
+  <div id="data-preview"></div>
+
+  <div class="chart-config">
+    <label>
+      X axis:
+      <select id="x-column"></select>
+    </label>
+    <label>
+      Y axis:
+      <select id="y-column"></select>
+    </label>
+    <button id="draw-chart">Draw chart</button>
+  </div>
+
+  <canvas id="chart" height="120"></canvas>
+</section>
+
+<script src="assets/js/datahub.js"></script>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Nikko DataHub · Built with HTML5 / CSS / JavaScript</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <!-- page-specific JS below -->
+</body>
+</html>
