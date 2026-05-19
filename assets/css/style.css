@@ -37,7 +37,7 @@ body {
 }
 
 .logo-top {
-  height: 70px;
+  height: 90px;
   width: auto;
   margin-left: 20px;
 }
@@ -46,8 +46,17 @@ body {
   height: 50px;
   width: auto;
   display: block;
-  margin: 0 auto 10px auto;
-  opacity: 0.9;
+  margin: 0 auto 14px auto;
+  opacity: 0.95;
+}
+
+.supporter-card {
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .support-btn {
@@ -63,8 +72,8 @@ body {
 }
 
 .support-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(255, 0, 204, 0.8);
+  transform: scale(1.07);
+  box-shadow: 0 0 40px rgba(255, 0, 204, 0.8);
 }
 
 
@@ -251,6 +260,13 @@ button:hover {
 .filters .filter.active {
   background: #020617;
 
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+  
 .social-icons a {
   font-size: 40px;
   margin: 0 14px;
