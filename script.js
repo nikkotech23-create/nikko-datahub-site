@@ -129,45 +129,50 @@ function animate() {
 }
 
 animate();
-// ------------------------------
-// MEGA SEARCH
-// ------------------------------
-document.getElementById("mega-search").innerHTML = `
-  <h2>Mega Search</h2>
-  <p>Search across major engines with one query.</p>
-  <input id="searchInput" type="text" placeholder="Search the web...">
-  <div class="btn-row">
-    <button data-e="google">Google</button>
-    <button data-e="bing">Bing</button>
-    <button data-e="duck">DuckDuckGo</button>
-    <button data-e="brave">Brave</button>
-    <button data-e="yahoo">Yahoo</button>
-    <button data-e="startpage">Startpage</button>
-    <button data-e="qwant">Qwant</button>
-    <button data-e="yandex">Yandex</button>
-    <button data-e="baidu">Baidu</button>
-  </div>
-`;
+document.addEventListener("DOMContentLoaded", () => {
 
-document.getElementById("mega-search").addEventListener("click", e => {
-  if (e.target.tagName !== "BUTTON") return;
-  const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
-  if (!q) return;
+  // ------------------------------
+  // MEGA SEARCH
+  // ------------------------------
+  document.getElementById("mega-search").innerHTML = `
+    <h2>Mega Search</h2>
+    <p>Search across major engines with one query.</p>
+    <input id="searchInput" type="text" placeholder="Search the web...">
+    <div class="btn-row">
+      <button data-e="google">Google</button>
+      <button data-e="bing">Bing</button>
+      <button data-e="duck">DuckDuckGo</button>
+      <button data-e="brave">Brave</button>
+      <button data-e="yahoo">Yahoo</button>
+      <button data-e="startpage">Startpage</button>
+      <button data-e="qwant">Qwant</button>
+      <button data-e="yandex">Yandex</button>
+      <button data-e="baidu">Baidu</button>
+    </div>
+  `;
 
-  const map = {
-    google: `https://www.google.com/search?q=${q}`,
-    bing: `https://www.bing.com/search?q=${q}`,
-    duck: `https://duckduckgo.com/?q=${q}`,
-    brave: `https://search.brave.com/search?q=${q}`,
-    yahoo: `https://search.yahoo.com/search?p=${q}`,
-    startpage: `https://www.startpage.com/do/search?q=${q}`,
-    qwant: `https://www.qwant.com/?q=${q}`,
-    yandex: `https://yandex.com/search/?text=${q}`,
-    baidu: `https://www.baidu.com/s?wd=${q}`,
-  };
+  document.getElementById("mega-search").addEventListener("click", e => {
+    if (e.target.tagName !== "BUTTON") return;
+    const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
+    if (!q) return;
 
-  window.open(map[e.target.dataset.e], "_blank");
+    const map = {
+      google: `https://www.google.com/search?q=${q}`,
+      bing: `https://www.bing.com/search?q=${q}`,
+      duck: `https://duckduckgo.com/?q=${q}`,
+      brave: `https://search.brave.com/search?q=${q}`,
+      yahoo: `https://search.yahoo.com/search?p=${q}`,
+      startpage: `https://www.startpage.com/do/search?q=${q}`,
+      qwant: `https://www.qwant.com/?q=${q}`,
+      yandex: `https://yandex.com/search/?text=${q}`,
+      baidu: `https://www.baidu.com/s?wd=${q}`,
+    };
+
+    window.open(map[e.target.dataset.e], "_blank");
+  });
+
 });
+
 
 // ------------------------------
 // RADIO
