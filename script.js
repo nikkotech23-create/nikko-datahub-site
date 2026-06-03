@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("mega-search").addEventListener("click", e => {
     if (e.target.tagName !== "BUTTON") return;
+    e.preventDefault();
+
     const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
     if (!q) return;
 
