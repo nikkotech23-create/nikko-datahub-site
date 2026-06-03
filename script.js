@@ -244,8 +244,8 @@ document.getElementById("retropiq").innerHTML = `
   <p>My neon‑soaked indie universe — handcrafted pixel worlds, synthwave vibes, and arcade‑style chaos.</p>
   <div class="btn-row">
     <a class="btn" href="https://retropiqarcade.org" target="_blank">Visit Retropiq Arcade</a>
-    <a class="btn" href="https://retropiqarcade.org/#games" target="_blank">Play My Games</a>
-    <a class="btn" href="https://retropiqarcade.org/#about" target="_blank">About</a>
+    <a class="btn" href="https://retropiq.itch.io" target="_blank">Play My Games</a>
+    <a class="btn" href="https://itch.io/blog/1096500/retropiq-made-with-heart" target="_blank">About</a>
   </div>
 `;
 
