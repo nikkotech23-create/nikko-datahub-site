@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nikko:data:hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js, PapaParse, Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+</head>
+
+<body>
+  <canvas id="bg"></canvas>
+
+  <div class="container">
+
+    <section id="hero" class="card">
+      <h1>nikko:data:hub</h1>
+      <p>Your neon gateway to search, data, learning & indie creativity.</p>
+      <div class="hero-nav">
+        <a href="#mega-search">Search</a>
+        <a href="#retropiq">Retropiq Arcade</a>
+        <a href="#video">Videos</a>
+        <a href="#charts">Charts & Maps</a>
+        <a href="#learning">Learning</a>
+        <a href="#about">About</a>
+      </div>
+    </section>
+
+    <section id="mega-search" class="card"></section>
+    <section id="radio" class="card"></section>
+    <section id="news" class="card"></section>
+    <section id="social" class="card"></section>
+    <section id="indie" class="card"></section>
+    <section id="retropiq" class="card"></section>
+    <section id="video" class="card"></section>
+
+
+   <section id="dev-tech" class="card">
+     <h2>Developer & Technical</h2>
+     <p>Search engines for code, documentation, and technical problem‑solving.</p>
+
+     <div class="link-grid">
+       <a href="https://stackoverflow.com/search" target="_blank">StackOverflow</a>
+       <a href="https://github.com/search" target="_blank">GitHub Code Search</a>
+       <a href="https://www.npmjs.com/search" target="_blank">npm</a>
+       <a href="https://pypi.org/search" target="_blank">PyPI</a>
+       <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+       <a href="https://devdocs.io" target="_blank">DevDocs</a>
+       <a href="https://www.wolframalpha.com" target="_blank">Wolfram Alpha</a>
+     </div>
+   </section>
+
+    <section id="creative-media" class="card">
+      <h2>Creative & Media</h2>
+      <p>Search engines for images, videos, fonts, and creative assets.</p>
+
+      <div class="link-grid">
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://vimeo.com" target="_blank">Vimeo</a>
+        <a href="https://www.flickr.com" target="_blank">Flickr</a>
+        <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        <a href="https://pexels.com" target="_blank">Pexels</a>
+        <a href="https://pixabay.com" target="_blank">Pixabay</a>
+        <a href="https://www.fontsquirrel.com" target="_blank">Font Squirrel</a>
+        <a href="https://freesound.org" target="_blank">Freesound</a>
+      </div>
+    </section>
+
+    <section id="data-stats" class="card">
+      <h2>Data & Statistics</h2>
+      <p>Engines for global datasets, research data, and statistical insights.</p>
+
+      <div class="link-grid">
+        <a href="https://data.worldbank.org" target="_blank">World Bank Data</a>
+        <a href="https://data.oecd.org" target="_blank">OECD Data</a>
+        <a href="https://data.un.org" target="_blank">UN Data</a>
+        <a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a>
+        <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a>
+        <a href="https://www.data.gov" target="_blank">Data.gov</a>
+        <a href="https://ourworldindata.org" target="_blank">Our World in Data</a>
+      </div>
+    </section>
+
+    <section id="shopping" class="card">
+      <h2>Shopping & Product</h2>
+      <p>Search engines for products, prices, and online shopping.</p>
+
+      <div class="link-grid">
+        <a href="https://www.amazon.com" target="_blank">Amazon</a>
+        <a href="https://www.ebay.com" target="_blank">eBay</a>
+        <a href="https://www.aliexpress.com" target="_blank">AliExpress</a>
+        <a href="https://shopping.google.com" target="_blank">Google Shopping</a>
+        <a href="https://www.pricerunner.com" target="_blank">PriceRunner</a>
+        <a href="https://www.idealo.com" target="_blank">Idealo</a>
+      </div>
+    </section>
+    
+    <section id="niche" class="card">
+      <h2>Specialized & Niche</h2>
+      <p>Unique engines for cybersecurity, archives, indie search, and AI search.</p>
+
+      <div class="link-grid">
+        <a href="https://www.shodan.io" target="_blank">Shodan</a>
+        <a href="https://archive.org/web" target="_blank">Wayback Machine</a>
+        <a href="https://www.mojeek.com" target="_blank">Mojeek</a>
+        <a href="https://search.marginalia.nu" target="_blank">Marginalia</a>
+        <a href="https://kagi.com" target="_blank">Kagi</a>
+        <a href="https://metaphor.systems" target="_blank">Metaphor</a>
+        <a href="https://www.perplexity.ai" target="_blank">Perplexity</a>
+      </div>
+    </section>
+
+    <section id="streamlit-apps" class="card">
+      <h2>Streamlit Apps</h2>
+      <p>Interactive tools, dashboards, and data apps built with Streamlit.</p>
+
+      <div class="link-grid">
+        <a href="https://nikko-dataapp-apps-hm22lnk8tinfxs7srabcrp.streamlit.app/" target="_blank">App One</a>
+        <a href="https://your-app-2.streamlit.app" target="_blank">App Two</a>
+        <a href="https://your-app-3.streamlit.app" target="_blank">App Three</a>
+        <a href="https://your-app-4.streamlit.app" target="_blank">App Four</a>
+      </div>
+    </section>
+
+
+
+    <section id="learning" class="card"></section>
+    <section id="support" class="card"></section>
+    <section id="about" class="card"></section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
