@@ -129,6 +129,7 @@ function animate() {
 }
 
 animate();
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // ------------------------------
@@ -151,29 +152,30 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `;
 
-  document.getElementById("mega-search").addEventListener("click", e => {
-    if (e.target.tagName !== "BUTTON") return;
-    e.preventDefault();
-
-    const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
-    if (!q) return;
-
-    const map = {
-      google: `https://www.google.com/search?q=${q}`,
-      bing: `https://www.bing.com/search?q=${q}`,
-      duck: `https://duckduckgo.com/?q=${q}`,
-      brave: `https://search.brave.com/search?q=${q}`,
-      yahoo: `https://search.yahoo.com/search?p=${q}`,
-      startpage: `https://www.startpage.com/do/search?q=${q}`,
-      qwant: `https://www.qwant.com/?q=${q}`,
-      yandex: `https://yandex.com/search/?text=${q}`,
-      baidu: `https://www.baidu.com/s?wd=${q}`,
-    };
-
-    window.open(map[e.target.dataset.e], "_blank");
-  });
-
 });
+
+// ⭐ Event delegation — survives DOM replacement
+document.addEventListener("click", e => {
+  if (!e.target.matches("#mega-search button")) return;
+
+  const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
+  if (!q) return;
+
+  const map = {
+    google: `https://www.google.com/search?q=${q}`,
+    bing: `https://www.bing.com/search?q=${q}`,
+    duck: `https://duckduckgo.com/?q=${q}`,
+    brave: `https://search.brave.com/search?q=${q}`,
+    yahoo: `https://search.yahoo.com/search?p=${q}`,
+    startpage: `https://www.startpage.com/do/search?q=${q}`,
+    qwant: `https://www.qwant.com/?q=${q}`,
+    yandex: `https://yandex.com/search/?text=${q}`,
+    baidu: `https://www.baidu.com/s?wd=${q}`,
+  };
+
+  window.open(map[e.target.dataset.e], "_blank");
+});
+
 
 
 // ------------------------------
