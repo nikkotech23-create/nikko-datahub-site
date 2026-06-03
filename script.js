@@ -155,16 +155,16 @@ document.getElementById("mega-search").addEventListener("click", e => {
   const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
   if (!q) return;
   const map = {
-    google: `https://www.google.com/search?q=${q}`,
-    bing: `https://www.bing.com/search?q=${q}`,
-    duck: `https://duckduckgo.com/?q=${q}`,
-    brave: `https://search.brave.com/search?q=${q}`,
-    yahoo: `https://search.yahoo.com/search?p=${q}`,
-    startpage: `https://www.startpage.com/search?p=${q}`,
-    qwant: `https://www.qwant.com/search?p=${q}`,
-    yandex: `https://yandex.com/search?p=${q}`,
-    baidu: `https://www.baidu.com/search?p=${q}`,
-  };
+  google: `https://www.google.com/search?q=${q}`,
+  bing: `https://www.bing.com/search?q=${q}`,
+  duck: `https://duckduckgo.com/?q=${q}`,
+  brave: `https://search.brave.com/search?q=${q}`,
+  yahoo: `https://search.yahoo.com/search?p=${q}`,
+  startpage: `https://www.startpage.com/do/search?q=${q}`,
+  qwant: `https://www.qwant.com/?q=${q}`,
+  yandex: `https://yandex.com/search/?text=${q}`,
+  baidu: `https://www.baidu.com/s?wd=${q}`,
+};
   window.open(map[e.target.dataset.e], "_blank");
 });
 
