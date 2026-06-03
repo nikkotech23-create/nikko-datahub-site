@@ -132,9 +132,6 @@ animate();
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ------------------------------
-  // MEGA SEARCH
-  // ------------------------------
   document.getElementById("mega-search").innerHTML = `
     <h2>Mega Search</h2>
     <p>Search across major engines with one query.</p>
@@ -151,12 +148,11 @@ document.addEventListener("DOMContentLoaded", () => {
       <button data-e="baidu">Baidu</button>
     </div>
   `;
-
 });
 
-// ⭐ Event delegation — survives DOM replacement
 document.addEventListener("click", e => {
-  if (!e.target.matches("#mega-search button")) return;
+  const btn = e.target.closest("#mega-search button");
+  if (!btn) return;
 
   const q = encodeURIComponent(document.getElementById("searchInput").value.trim());
   if (!q) return;
@@ -173,8 +169,13 @@ document.addEventListener("click", e => {
     baidu: `https://www.baidu.com/s?wd=${q}`,
   };
 
-  window.open(map[e.target.dataset.e], "_blank");
+  const a = document.createElement("a");
+  a.href = map[btn.dataset.e];
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  a.click();
 });
+
 
 
 
