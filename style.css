@@ -206,6 +206,9 @@ video {
   border-color: #7df9ff;
   text-shadow: 0 0 6px #7df9ff;
 }
+#bg {
+  pointer-events: none;
+}
 
 
 /* Responsive */
