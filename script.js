@@ -313,11 +313,11 @@ document.getElementById("about").innerHTML = `
   </p>
   <p>
     I grew up loving arcades, pixel art, and the feeling of discovering hidden corners of the internet.
-    RetroPiq Arcade is my way of keeping that magic alive — a place where creativity, nostalgia, and
+    Retropiq Arcade is my way of keeping that magic alive — a place where creativity, nostalgia, and
     experimentation collide.
   </p>
   <p>
-    Nikko Data Hub is my personal playground. A space where I mix everything I love:
+    nikko:data:hub is my personal playground. A space where I mix everything I love:
     search engines, open data, charts, maps, indie games, learning, and the raw joy of building things.
   </p>
   <p>
