@@ -324,7 +324,7 @@ const pdfData = {
     { title: "The Last Dragon Monk", file: "pdfs/dragon_monk.pdf" }
   ],
   history: [
-    { title: "The Siege of Aramoor", file: "pdfs/siege_of_aramoor.pdf" },
+    { title: "Daily Life: Ancient Rome", file: "pdfs/daily_life_ancient_rome.pdf" },
     { title: "Empire of the Iron Crown", file: "pdfs/iron_crown.pdf" }
   ],
   science: [
