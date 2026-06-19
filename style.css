@@ -219,6 +219,39 @@ video {
   pointer-events: none;
 }
 
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.pdf-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pdf-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.pdf-preview {
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+  margin: 10px 0;
+}
+
+.pdf-link {
+  color: #4da3ff;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* Responsive */
 
