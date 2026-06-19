@@ -223,6 +223,9 @@ document.getElementById("video").innerHTML = `
     <button class="vid-cat" data-cat="trailers">Trailers</button>
     <button class="vid-cat" data-cat="tutorials">Tutorials</button>
     <button class="vid-cat" data-cat="favorites">Favorites</button>
+    <button class="vid-cat" data-cat="documentaries">Documentaries</button>
+    <button class="vid-cat" data-cat="retro">Retro</button>
+    <button class="vid-cat" data-cat="worldcup">World Cup</button>
   </div>
 
   <div id="videoGrid" class="video-grid"></div>
@@ -253,6 +256,24 @@ const videoData = {
     "s1-pfiVMKAs",
     "aBlsrtxuwss",
     "kH1XlwHQv9o"
+  ],
+  documentaries: [
+    "ND7owjmtPNo",
+    "MXXP_xpo0uM",
+    "9cOIUH-H_I0",
+    "64RSvsnDbwo"
+  ],
+  retro: [
+    "eGIIvR190Jw",
+    "1_urrxvQlMw",
+    "3Gp87zxi6FY",
+    "FWAoaoHDeM0"
+  ],
+  worldcup: [
+    "ynqGWHJPkuQ",
+    "fJrctBM0poE",
+    "JH_WRKTCPK4",
+    "cjsFUxVHAX0"
   ]
 };
 
