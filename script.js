@@ -296,6 +296,69 @@ document.querySelectorAll(".vid-cat").forEach(btn => {
 
 // default category
 renderVideos("devlogs");
+// ------------------------------
+// STORIES (PDF CARD)
+// ------------------------------
+document.getElementById("pdfs").innerHTML = `
+  <h2>Stories</h2>
+  <p>Fantasy, history, and science tales I've written.</p>
+
+  <div class="category-row">
+    <button class="pdf-cat" data-cat="fantasy">Fantasy</button>
+    <button class="pdf-cat" data-cat="history">History</button>
+    <button class="pdf-cat" data-cat="science">Science</button>
+  </div>
+
+  <!-- The story links will appear INSIDE this card -->
+  <div id="pdfGrid" class="link-grid"></div>
+`;
+
+
+// ------------------------------
+// PDF STORY DATA
+// Add your own PDFs here
+// ------------------------------
+const pdfData = {
+  fantasy: [
+    { title: "The Crystal of Aeloria", file: "pdfs/crystal_of_aeloria.pdf" },
+    { title: "The Last Dragon Monk", file: "pdfs/dragon_monk.pdf" }
+  ],
+  history: [
+    { title: "The Siege of Aramoor", file: "pdfs/siege_of_aramoor.pdf" },
+    { title: "Empire of the Iron Crown", file: "pdfs/iron_crown.pdf" }
+  ],
+  science: [
+    { title: "Voyagers of the Nebula", file: "pdfs/nebula_voyagers.pdf" },
+    { title: "Chrono‑Engineers", file: "pdfs/chrono_engineers.pdf" }
+  ]
+};
+
+
+// ------------------------------
+// LOAD STORIES INTO THE GRID
+// ------------------------------
+function loadPDFs(category) {
+  const grid = document.getElementById("pdfGrid");
+  grid.innerHTML = "";
+
+  pdfData[category].forEach(pdf => {
+    grid.innerHTML += `
+      <a href="${pdf.file}" target="_blank">
+        ${pdf.title}
+      </a>
+    `;
+  });
+}
+
+
+// ------------------------------
+// CATEGORY BUTTON HANDLERS
+// ------------------------------
+document.querySelectorAll(".pdf-cat").forEach(btn => {
+  btn.addEventListener("click", () => {
+    loadPDFs(btn.dataset.cat);
+  });
+});
 
 // ------------------------------
 // LEARNING HUB
