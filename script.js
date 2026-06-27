@@ -234,7 +234,7 @@ document.getElementById("video").innerHTML = `
 // Replace these IDs with your real YouTube video IDs
 const videoData = {
   devlogs: [
-    "48C9hYoLMis",
+    "WgYpjPIWCnY",
     "84biRLlHJMk",
     "nczCuD6AuSg",
     "lJHX0xKpJ8A"
@@ -270,10 +270,10 @@ const videoData = {
     "FWAoaoHDeM0"
   ],
   worldcup: [
-    "ynqGWHJPkuQ",
-    "tm1PRvtp1PM",
-    "V7z6uzD91Ao",
-    "_3PYS5oCgvQ"
+    "oj5LlMvV0qk",
+    "BppGXEZbiy4",
+    "XnDs5rgXgFM",
+    "TImmPYoLE-8"
   ]
 };
 
@@ -325,7 +325,7 @@ const pdfData = {
   ],
   history: [
     { title: "Daily Life: Ancient Rome", file: "pdfs/daily_life_ancient_rome.pdf" },
-    { title: "Empire of the Iron Crown", file: "pdfs/iron_crown.pdf" }
+    { title: "World History X", file: "pdfs/world_history_x.pdf" }
   ],
   science: [
     { title: "Voyagers of the Nebula", file: "pdfs/nebula_voyagers.pdf" },
